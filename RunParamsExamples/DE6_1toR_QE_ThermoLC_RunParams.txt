@@ -1,0 +1,29 @@
+# Label Strings
+Use Predefined Labeling Scheme	True
+Predefined Labeling Scheme	Diethylation 6plex
+# Additional Information Files
+Fasta File Path	E:\MassSpec\PaperData\DB\hsa_UP000005640_cRAP_added\hsa_UP000005640_cRAP_added.revCat.fasta
+
+# RT Shift Prediction Option
+RT Shift Prediction Option	2
+RT Shift Model Path	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RTmodel\D-shifts_libSVMData_UniquePepSampled_ForPaperQE_ThermoUltimate3000_125m.standardized.s4t2c0.1e0.00005.model
+RT Shift Standard Path	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RTmodel\D-shifts_libSVMData_UniquePepSampled_ForPaperQE_ThermoUltimate3000_125m.standard
+
+# Options
+Tolerence	5
+Write Excel	True
+Write XIC .m Files	False
+
+# Output Dir
+Quantification Output Dir	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\QuantResults\
+XIC mfile Dir	
+
+# Spectrum File Paths
+Spec File Index	Condition Index	Replicate Index	Fractionation Index	Raw File Path	ID File Path
+Spec File 1	1	1	1	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RawFiles\DE_1_1_2_NAQ448C1_J100_0913.raw	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\SearchResults\DE_1_1_2_NAQ448C1_J100_0913.tsv
+Spec File 2	2	1	1	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RawFiles\DE_1_1_NAQ448C1_J100_0913.raw	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\SearchResults\DE_1_1_NAQ448C1_J100_0913.tsv
+Spec File 3	3	1	1	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RawFiles\DE_1_4_NAQ448C1_J100_0913.raw	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\SearchResults\DE_1_4_NAQ448C1_J100_0913.tsv
+Spec File 4	4	1	1	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RawFiles\DE_1_8_NAQ448C1_J100_0913.raw	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\SearchResults\DE_1_8_NAQ448C1_J100_0913.tsv
+Spec File 5	5	1	1	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RawFiles\DE_1_10_NAQ448C1_J100_0913.raw	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\SearchResults\DE_1_10_NAQ448C1_J100_0913.tsv
+Spec File 6	6	1	1	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RawFiles\DE_1_20_NAQ448C1_J100_0913.raw	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\SearchResults\DE_1_20_NAQ448C1_J100_0913.tsv
+Spec File 7	7	1	1	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\RawFiles\DE_1_50_NAQ448C1_J100_0913.raw	E:\MassSpec\PaperData\DE6_1toR_QE_ThermoLC\SearchResults\DE_1_50_NAQ448C1_J100_0913.tsv

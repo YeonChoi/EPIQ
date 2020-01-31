@@ -1,0 +1,29 @@
+# Label Strings					
+Use Predefined Labeling Scheme	TRUE				
+Predefined Labeling Scheme	upSILAC 6plex				
+# Additional Information Files					
+Fasta File Path	E:\MassSpec\PaperData\DB\hsa_UP000005640_cRAP_added\hsa_UP000005640_cRAP_added.revCat.fasta				
+					
+# RT Shift Prediction Option					
+RT Shift Prediction Option	2							
+RT Shift Model Path	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RtModel\D-shifts_libSVMData_UniquePepSampled_ForPaperSILAC6plexLumos_ThermoUltimate3000_130m.standardized.s4t2c0.1e0.00005.model				
+RT Shift Standard Path	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RtModel\D-shifts_libSVMData_UniquePepSampled_ForPaperSILAC6plexLumos_ThermoUltimate3000_130m.standard				
+					
+# Options					
+Tolerence	5				
+Write Excel	TRUE				
+Write XIC .m Files	FALSE				
+					
+# Output Dir					
+Quantification Output Dir	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\QuantResults\				
+XIC mfile Dir					
+					
+# Spectrum File Paths					
+Spec File Index	Condition Index	Replicate Index	Fractionation Index	Raw File Path	ID File Path
+Spec File 1	1	1	1	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RawFiles\SILAC_1_10_NCP1_J100_20180206.raw	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\SearchResults\SILAC_1_10_NCP1_J100_20180206.tsv
+Spec File 2	2	1	1	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RawFiles\SILAC_20_10_1_NCP1_J100_20180206.raw	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\SearchResults\SILAC_20_10_1_NCP1_J100_20180206.tsv
+Spec File 3	3	1	1	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RawFiles\SILAC_eq_1_NCP1_J100_20180206.raw	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\SearchResults\SILAC_eq_1_NCP1_J100_20180206.tsv
+Spec File 4	3	2	1	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RawFiles\SILAC_eq_2_NCP1_J100_20180206.raw	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\SearchResults\SILAC_eq_2_NCP1_J100_20180206.tsv
+Spec File 5	3	3	1	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RawFiles\SILAC_eq_3_NCP1_J100_20180206.raw	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\SearchResults\SILAC_eq_3_NCP1_J100_20180206.tsv
+Spec File 6	3	4	1	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RawFiles\SILAC_eq_1-1_NCP1_J100_20180220.raw	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\SearchResults\SILAC_eq_1-1_NCP1_J100_20180220.tsv
+Spec File 7	3	5	1	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\RawFiles\SILAC_eq_1-2_NCP1_J100_20180220.raw	E:\MassSpec\PaperData\SILAC6_Lumos_SILACLC\SearchResults\SILAC_eq_1-2_NCP1_J100_20180220.tsv

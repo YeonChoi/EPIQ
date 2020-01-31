@@ -1,0 +1,61 @@
+import glob
+import os
+import re
+
+MSGFPATH = "/casa/yeon/bin/msgf+/MSGFPlus.jar"
+LABELS = "L0 L1 L2 L3 L4 L5".split()
+DB = "/casa/yeon/p/DEAQ/db/cRAP_added/hsa_UP000005640/hsa_UP000005640_cRAP_added.fasta"
+INPUTFILEEXT = "mzML"
+FILEEXTRE = ".[^.]*$"
+SAMPLES = [re.sub(FILEEXTRE, "", x.split('/')[-1]) for x in \
+           glob.glob('../mzML_MSConvert/*.{}'.format(INPUTFILEEXT))]
+TARGETS = [expand('tsv/{sample}.tsv', sample=SAMPLES)]
+
+localrules: all, make_db, clean_db, rename_tsv
+
+rule all:
+    input: TARGETS
+
+rule make_db:
+    input: DB
+    output: DB.replace('.fasta', '.revCat.fasta')
+    run:
+        if not os.path.exists(str(output[0])):
+            shell("java -cp {MSGFPATH} edu.ucsd.msjava.msdbsearch.BuildSA \
+                  -tda 1 -d {input}")
+
+rule run_msgfplus:
+    input: '../mzML_MSConvert/{{sample}}.{}'.format(INPUTFILEEXT),
+           DB.replace('.fasta', '.revCat.fasta'),
+           'modfiles/Mod_StatC_IAA_DynKNterm_DE_{label}.txt',
+    output: 'mzid/{sample}_{label}.mzid'
+    threads: 8
+    run:
+        shell("java -Xmx20g -jar {MSGFPATH} -s {input[0]} \
+              -d {DB} \
+              -ti 0,1\
+              -n 3\
+              -mod {input[2]}\
+              -o  {output}\
+              -m 3 \
+              -inst 3 \
+              -e 1 \
+              -t 20ppm -tda 1")
+
+rule mzid_to_tsv:
+    input: 'mzid/{sample}_{label}.mzid'
+    output: temp('mzid/{sample}_{label}.tsv')
+    threads: 8
+    run:
+        shell("java -Xmx20g -cp {MSGFPATH} edu.ucsd.msjava.ui.MzIDToTsv\
+                -i {input}  -o {output} \
+                -showQValue 1 -showDecoy 1")
+
+rule concat_tsv:
+    input: expand('mzid/{{sample}}_{label}.tsv', label=LABELS)
+    output: 'tsv/{sample}.tsv'
+    shell: "gawk 'FNR==1 && NR!=1{{next;}}{{print}}' {input} > {output}"
+
+rule clean_db:
+    shell: "rm -f {}.revCat.*".format(DB[:-1*len('.fasta')])
+
