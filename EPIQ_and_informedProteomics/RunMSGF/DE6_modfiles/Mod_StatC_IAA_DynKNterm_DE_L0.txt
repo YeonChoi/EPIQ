@@ -1,0 +1,7 @@
+NumMods=2
+O1,M,opt,any,Oxidation				# Oxidation M
+
+C2H3N1O1,C,fix,any,Carbamidomethyl
+
+56.0626,K,fix,any,Diethyl
+56.0626,*,fix,N-term,Diethyl

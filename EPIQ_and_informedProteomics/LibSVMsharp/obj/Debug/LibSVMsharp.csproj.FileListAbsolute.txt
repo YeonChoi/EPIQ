@@ -1,0 +1,11 @@
+C:\Source\MassSpec\DEAQ\LibSVMsharp\bin\Debug\libsvm.dll
+C:\Source\MassSpec\DEAQ\LibSVMsharp\bin\Debug\Accord.dll.config
+C:\Source\MassSpec\DEAQ\LibSVMsharp\bin\Debug\LIBSVM_COPYRIGHT
+C:\Source\MassSpec\DEAQ\LibSVMsharp\bin\Debug\LibSVMsharp.dll
+C:\Source\MassSpec\DEAQ\LibSVMsharp\bin\Debug\LibSVMsharp.pdb
+C:\Source\MassSpec\DEAQ\LibSVMsharp\bin\Debug\Accord.dll
+C:\Source\MassSpec\DEAQ\LibSVMsharp\bin\Debug\Accord.xml
+C:\Source\MassSpec\DEAQ\LibSVMsharp\obj\Debug\LibSVMsharp.csprojResolveAssemblyReference.cache
+C:\Source\MassSpec\DEAQ\LibSVMsharp\obj\Debug\LibSVMsharp.csproj.ResolveComReference.cache
+C:\Source\MassSpec\DEAQ\LibSVMsharp\obj\Debug\LibSVMsharp.dll
+C:\Source\MassSpec\DEAQ\LibSVMsharp\obj\Debug\LibSVMsharp.pdb

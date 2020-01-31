@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{512C05CB-D33F-41D9-965B-ECBFCCA5DE18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Epiq</RootNamespace>
+    <AssemblyName>Epiq</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>971afd0e</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord, Version=3.3.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.3.3.0\lib\net40\Accord.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Accord.MachineLearning">
+      <HintPath>..\packages\Accord.MachineLearning.3.3.0\lib\net40\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>..\packages\Accord.Statistics.3.3.0\lib\net40\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.3.10.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LabelingEfficiencyCorrection.cs" />
+    <Compile Include="IsotopeImpurityMeasurement.cs" />
+    <Compile Include="IsotopeImpurityValues.cs" />
+    <Compile Include="LabelingSchemes.cs" />
+    <Compile Include="BuiltInRtModels.cs" />
+    <Compile Include="DShift.cs" />
+    <Compile Include="RunParams.cs" />
+    <Compile Include="Template.cs" />
+    <Compile Include="DShiftTraining.cs" />
+    <Compile Include="Interpolatable.cs" />
+    <Compile Include="XicShape.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="LabelList.cs" />
+    <Compile Include="MatrixCalculation.cs" />
+    <Compile Include="CorrectedProductSpectrum.cs" />
+    <Compile Include="PeptideQuantification.cs" />
+    <Compile Include="PipeLine.cs" />
+    <Compile Include="PrecusorMzCandidates.cs" />
+    <Compile Include="PreProcessMs2Spec.cs" />
+    <Compile Include="ProteinGroupQuantification.cs" />
+    <Compile Include="PsmQuantification.cs" />
+    <Compile Include="IQuantifiable.cs" />
+    <Compile Include="QuantifiedPeptide.cs" />
+    <Compile Include="QuantifiedPeptideDictionary.cs" />
+    <Compile Include="QuantifiedProteinGroup.cs" />
+    <Compile Include="QuantifiedProteinGroupDictionary.cs" />
+    <Compile Include="XicCluster.cs" />
+    <Compile Include="TemplateForTrain.cs" />
+    <Compile Include="QuantifiedProtein.cs" />
+    <Compile Include="SearchResults.cs" />
+    <Compile Include="Params.cs" />
+    <Compile Include="Ms2Result.cs" />
+    <Compile Include="Ms2ResultList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InterpolatedXic.cs" />
+    <Compile Include="QuantifiedPsm.cs" />
+    <Compile Include="QuantifiedPsmList.cs" />
+    <Compile Include="XicMatrix.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BottomUpConsole\MSPathFinder.csproj">
+      <Project>{0dd71ed9-6bb8-4436-8459-8df9abc70236}</Project>
+      <Name>MSPathFinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InformedProteomics.Backend\InformedProteomics.Backend.csproj">
+      <Project>{70a129ac-217a-4086-9ecb-63ff22289d90}</Project>
+      <Name>InformedProteomics.Backend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InformedProteomics.BottomUp\InformedProteomics.BottomUp.csproj">
+      <Project>{70efa57f-7566-4673-93c9-75cc85f8731d}</Project>
+      <Name>InformedProteomics.BottomUp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InformedProteomics.DIA\InformedProteomics.DIA.csproj">
+      <Project>{16db0078-9a4c-41d8-9356-4205f03ae04a}</Project>
+      <Name>InformedProteomics.DIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InformedProteomics.IMS\InformedProteomics.IMS.csproj">
+      <Project>{6c14df30-e8f9-43ba-8e12-3c3aa9e1ccaa}</Project>
+      <Name>InformedProteomics.IMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InformedProteomics.Scoring\InformedProteomics.Scoring.csproj">
+      <Project>{cf6a61b6-06e4-47d4-be2c-0a4d8c4e018b}</Project>
+      <Name>InformedProteomics.Scoring</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibSVMsharp\LibSVMsharp.csproj">
+      <Project>{AC04337C-E542-4BE9-8DBD-5B44535299E2}</Project>
+      <Name>LibSVMsharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParallelMSPathFinderT\ParallelMSPathFinderT.csproj">
+      <Project>{04e5216d-7451-4855-961f-ee212158ab73}</Project>
+      <Name>ParallelMSPathFinderT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PbfGen\PbfGen.csproj">
+      <Project>{b31c2ac2-88c6-43c9-b809-26b7547592ff}</Project>
+      <Name>PbfGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SelectivityScore\SelectivityScore.csproj">
+      <Project>{19658c05-ef09-404d-959f-ef9a6029013b}</Project>
+      <Name>SelectivityScore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopDownConsole\MSPathFinderT.csproj">
+      <Project>{dfbecbac-7fda-4c78-9f4e-cc21c79a6db6}</Project>
+      <Name>MSPathFinderT</Name>
+    </ProjectReference>
+    <ProjectReference Include="intervaltree\IntervalTreeLib\IntervalTreeLib.csproj">
+      <Project>{0207A18A-6BC1-490B-B010-7A3DA3178890}</Project>
+      <Name>IntervalTreeLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSFileReaderLib">
+      <Guid>{F0C5F3E3-4F2A-443E-A74D-0AABE3237494}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Accord.3.3.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.3.0\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Accord.3.3.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.3.0\build\Accord.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

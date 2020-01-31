@@ -1,0 +1,12 @@
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\x64\Release\IntervalTreeLib.dll
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\x64\Release\IntervalTreeLib.pdb
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\x64\Release\PowerCollections.dll
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\x64\Release\IntervalTreeLib.dll
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\x64\Release\IntervalTreeLib.pdb
+E:\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\x64\Release\IntervalTreeLib.dll
+E:\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\x64\Release\IntervalTreeLib.pdb
+E:\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\x64\Release\PowerCollections.dll
+E:\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\x64\Release\IntervalTreeLib.csprojAssemblyReference.cache
+E:\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\x64\Release\IntervalTreeLib.csproj.CopyComplete
+E:\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\x64\Release\IntervalTreeLib.dll
+E:\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\x64\Release\IntervalTreeLib.pdb

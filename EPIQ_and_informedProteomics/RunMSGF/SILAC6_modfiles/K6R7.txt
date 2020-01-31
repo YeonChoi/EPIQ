@@ -1,0 +1,7 @@
+NumMods=2
+O1,M,opt,any,Oxidation				# Oxidation M
+
+C2H3N1O1,C,fix,any,Carbamidomethyl
+
+6.020129026,K,fix,any,heavy
+7.0439372213,R,fix,any,heavy

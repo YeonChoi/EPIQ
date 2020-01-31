@@ -1,0 +1,6 @@
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\Debug\IntervalTreeLib.dll
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\Debug\IntervalTreeLib.pdb
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\bin\Debug\PowerCollections.dll
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\Debug\IntervalTreeLib.csprojResolveAssemblyReference.cache
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\Debug\IntervalTreeLib.dll
+C:\Source\MassSpec\DEAQ\DEmain\intervaltree\IntervalTreeLib\obj\Debug\IntervalTreeLib.pdb
